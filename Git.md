@@ -55,7 +55,7 @@ git分支常用命令：
 - 然后再继续关联自己的仓库 `git remote add origin https://github.com/xxxx.git`
 - 最后`git push origin main` 
 
-### 使用git在github更新代码
+## 使用git在github更新文件
 - 查看当前git仓库状态`git status` 
 - 更新全部`git add *` 
 - `git commit -m "更新说明"` 
