@@ -49,4 +49,16 @@ git分支常用命令：
 	- `git pull` 从远程获取最新版本到<span style="background:#b1ffff">合并</span>到本地。
 - `git push` 推送到远程仓库
 - `git remote rm` 删除远程仓库
-  
+## 存在问题
+### git问题error: remote origin already exists.
+- 先输入`git remote rm origin` 删除关联的origin的远程库
+- 然后再继续关联自己的仓库 `git remote add origin https://github.com/xxxx.git`
+- 最后`git push origin main` 
+
+### 使用git在github更新代码
+- 查看当前git仓库状态`git status` 
+- 更新全部`git add *` 
+- `git commit -m "更新说明"` 
+- `git pull` 拉取当前分支最新代码
+- `git push origin main` push到远程main分支上
+
