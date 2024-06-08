@@ -55,10 +55,11 @@ git分支常用命令：
 - 然后再继续关联自己的仓库 `git remote add origin https://github.com/xxxx.git`
 - 最后`git push origin main` 
 
+### 出现HTTP/2 stream 1 was not closed clreanly before end of the underlying stream
+- `git config --global http.version HTTP/1.1` 
 ## 使用git在github更新文件
 - 查看当前git仓库状态`git status` 
 - 更新全部`git add *` 
 - `git commit -m "更新说明"` 
 - `git pull` 拉取当前分支最新代码
 - `git push origin main` push到远程main分支上
-
